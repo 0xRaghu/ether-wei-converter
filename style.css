@@ -1,98 +1,99 @@
 /* Global Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent; /* Ensures no unwanted background */
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .converter-container {
-    background: linear-gradient(135deg, #6366f1, #4f46e5); /* Gradient inside the box */
-    border-radius: 0px; /* Removed rounded corners */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 100%;
-    max-width: 350px;
-    color: white;
-  }
-  
-  h1 {
-    font-size: 20px;
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    font-weight: bold;
-    color: #e0e7ff; /* Light text for labels */
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .input-with-copy {
-    display: flex;
-    align-items: center;
-  }
-  
-  input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 0; /* Removed input field rounding */
-    font-size: 14px;
-    transition: box-shadow 0.3s;
-    outline: none;
-  }
-  
-  input:focus {
-    box-shadow: 0 0 8px #ffffff;
-  }
-  
-  input::placeholder {
-    color: #d1d5db; /* Subtle placeholder color */
-  }
-  
-  .copy-btn {
-    background: #ffffff; /* White background for contrast */
-    color: #6366f1; /* Purple text to match the theme */
-    border: none;
-    border-radius: 0; /* Removed button rounding */
-    margin-left: 8px;
-    padding: 10px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  }
-  
-  .copy-btn:hover {
-    background: #e0e7ff; /* Light blue hover */
-    color: #4f46e5;
-    transform: scale(1.05);
-  }
-  
-  .copy-btn:active {
-    background: #c7d2fe; /* Slightly darker blue on active */
-    transform: scale(1);
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.converter-container {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 350px;
+  width: 100%;
+  color: white;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #e0e7ff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-with-copy {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 14px;
+  transition: box-shadow 0.3s;
+  outline: none;
+  height: 40px; /* Uniform height for inputs */
+}
+
+input:focus {
+  box-shadow: 0 0 8px #ffffff;
+}
+
+input::placeholder {
+  color: #d1d5db;
+}
+
+.copy-btn {
+  background: #ffffff;
+  color: #6366f1;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  margin-left: 8px;
+  padding: 0 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  height: 40px; /* Match input height */
+}
+
+.copy-btn:hover {
+  background: #e0e7ff;
+  color: #4f46e5;
+  transform: scale(1.05);
+}
+
+.copy-btn:active {
+  background: #c7d2fe;
+  transform: scale(1);
+}
