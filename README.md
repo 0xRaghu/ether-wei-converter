@@ -56,7 +56,7 @@ Follow these steps to install and test the extension locally:
 
 - Here’s what the extension looks like in action:
 
-  ![Screenshot](image.png)
+  ![Screenshot](screenshot.png)
 
 ## 🛠️ Built With
 
