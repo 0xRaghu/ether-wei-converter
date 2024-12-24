@@ -9,23 +9,29 @@
   <body>
     <div class="converter-container">
       <h1>Ether ↔ Gwei ↔ Wei</h1>
-
+      <div class="icon-container">
+        <img src="icon.png" alt="App Icon" class="app-icon" />
+      </div>
       <div class="input-group">
         <label for="ethInput">Ether (ETH):</label>
         <div class="input-with-copy">
           <input type="number" id="ethInput" placeholder="Enter ETH" />
           <button class="copy-btn" data-target="ethInput" title="Copy to clipboard">
-            📋
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="clipboard-icon">
+              <path fill="#6366F1" d="M19 4h-4.18C14.4 2.84 13.3 2 12 2s-2.4.84-2.82 2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2zM12 4a1 1 0 110 2 1 1 0 010-2zm7 16H5V6h2v2h10V6h2z"></path>
+            </svg>
           </button>
         </div>
-      </div>
+      </div>      
 
       <div class="input-group">
         <label for="gweiInput">Gwei:</label>
         <div class="input-with-copy">
           <input type="number" id="gweiInput" placeholder="Enter Gwei" />
           <button class="copy-btn" data-target="gweiInput" title="Copy to clipboard">
-            📋
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="clipboard-icon">
+              <path fill="#6366F1" d="M19 4h-4.18C14.4 2.84 13.3 2 12 2s-2.4.84-2.82 2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2zM12 4a1 1 0 110 2 1 1 0 010-2zm7 16H5V6h2v2h10V6h2z"></path>
+            </svg>
           </button>
         </div>
       </div>
@@ -35,10 +41,15 @@
         <div class="input-with-copy">
           <input type="number" id="weiInput" placeholder="Enter Wei" />
           <button class="copy-btn" data-target="weiInput" title="Copy to clipboard">
-            📋
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="clipboard-icon">
+              <path fill="#6366F1" d="M19 4h-4.18C14.4 2.84 13.3 2 12 2s-2.4.84-2.82 2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2zM12 4a1 1 0 110 2 1 1 0 010-2zm7 16H5V6h2v2h10V6h2z"></path>
+            </svg>
           </button>
         </div>
       </div>
-    </div>    
+      <div class="footer">
+        by <a href="https://github.com/0xRaghu" target="_blank">0xRaghu</a>
+      </div> 
+    </div>       
   </body>
 </html>

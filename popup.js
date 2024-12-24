@@ -90,14 +90,23 @@ document.addEventListener('DOMContentLoaded', () => {
     gweiInput.addEventListener('input', updateFromGwei);
     weiInput.addEventListener('input', updateFromWei);
   
-    const copyButtons = document.querySelectorAll('.copy-btn');
-    copyButtons.forEach((button) => {
+    document.querySelectorAll('.copy-btn').forEach((button) => {
       button.addEventListener('click', (e) => {
-        const targetId = e.target.dataset.target;
+        const targetId = e.target.closest('button').dataset.target; // Use the closest button element
         const targetInput = document.getElementById(targetId);
-        navigator.clipboard.writeText(targetInput.value).then(() => {
-          alert(`Copied: ${targetInput.value}`);
-        });
+    
+        if (targetInput) {
+          navigator.clipboard
+            .writeText(targetInput.value)
+            .then(() => {
+              alert(`Copied: ${targetInput.value}`);
+            })
+            .catch((err) => {
+              console.error('Failed to copy text: ', err);
+            });
+        } else {
+          console.error(`Element with id "${targetId}" not found.`);
+        }
       });
-    });
+    });    
   });
