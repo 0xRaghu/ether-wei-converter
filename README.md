@@ -2,7 +2,10 @@
 
 A lightweight Chrome extension to quickly convert between Ether (ETH), Gwei, and Wei. This tool is designed for developers, blockchain enthusiasts, and crypto users who frequently work with Ethereum units.
 
----
+## 🌐 Live Demo (Chrome Web Store)
+
+You can install this extension directly from the Chrome Web Store:  
+[Ether ↔ Gwei ↔ Wei Converter](https://chrome.google.com/webstore/detail/mpcihihcafeegcadflidhmhgmbplpkeo)
 
 ## 🚀 Features
 
@@ -63,10 +66,6 @@ Follow these steps to install and test the extension locally:
 - **HTML**: For the structure of the popup.
 - **CSS**: For styling the popup with a modern, gradient-filled design.
 - **JavaScript**: For handling the conversion logic using precise arithmetic.
-
-## 🌐 Live Demo (Chrome Web Store)
-
-- Once published, you can install this extension directly from the Chrome Web Store (link coming soon).
 
 ## 🤝 Contributing
 
